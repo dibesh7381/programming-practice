@@ -17,3 +17,8 @@ completed this program
 completed this program
 
 ---
+
+# 5.Check if a given number is prime.
+completed this program
+
+---
