@@ -24,4 +24,4 @@ completed this program
 ---
 
 # 6.Calculate the factorial of a given number.
-complete this program
+completed this program
