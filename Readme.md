@@ -1,4 +1,4 @@
-# 1.Find the Number is Even or Odd
+# 1.Find the Number is Even or Odd.
 completed this program 
 
 ---
@@ -7,3 +7,6 @@ completed this program
 completed this program
 
 ---
+
+# 3. Reverse a given string without using built-in reverse() methods. 
+completed this program
