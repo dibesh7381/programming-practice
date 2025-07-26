@@ -25,3 +25,10 @@ completed this program
 
 # 6.Calculate the factorial of a given number.
 completed this program
+
+---
+
+# 7.Swap the values of two variables with and without using a third variable.
+completed this program
+
+---
