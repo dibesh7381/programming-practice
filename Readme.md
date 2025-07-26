@@ -10,3 +10,6 @@ completed this program
 
 # 3. Reverse a given string without using built-in reverse() methods. 
 completed this program
+
+# 4.Generate the Fibonacci series up to a given number of terms.
+completed this program
