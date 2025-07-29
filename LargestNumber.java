@@ -16,19 +16,15 @@ public class LargestNumber{
         }
 
         int largest = numbers[0];  // here we got the first value of an array
-        int smallest = numbers[0];  // here also we  got the first value of an array
 
         for (int i = 1; i < numbers.length; i++) {  // here the loop is starting from index 1 of an array until array full length
              if(numbers[i] > largest){ // here we check for find largest value [like if index-1 value is 20 and largest value is 10 condition is true it runs]
                 largest = numbers[i];  // here we update our largest value like old value is 10 then new value is 20
              }
-             if (numbers[i] < smallest) {  // here also same we find the smallest value
-                smallest = numbers[i];  // old value is 5 then new value is 3
-             }
         }
 
         System.out.println("Largest number from array is " + largest);  // here we print largest value from an array
-        System.out.println("Smallest number from array is " + smallest);  // here we print  smallest value from an array
+        
 
 
         sc.close(); // here we close the Scanner class object
