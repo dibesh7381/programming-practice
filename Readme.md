@@ -28,7 +28,13 @@ completed this program
 
 ---
 
+
 # 7.Swap the values of two variables with and without using a third variable.
+completed this program
+
+---
+
+# 8.Calculate the sum of the digits of a given number.
 completed this program
 
 ---
