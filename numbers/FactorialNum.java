@@ -1,3 +1,5 @@
+package numbers;
+
 public class FactorialNum {
 
     public static int Findfact(int num){ // here we create a static method that requires a integer value

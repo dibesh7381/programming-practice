@@ -1,4 +1,4 @@
-
+package numbers;
 import java.util.Scanner;
 
 public class PrimeNum {
