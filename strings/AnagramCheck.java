@@ -1,34 +1,37 @@
 package strings;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class AnagramCheck {
+   public static boolean isAnagram(String s1, String s2){ // here we make a method that accepts two strings
+       if (s1.length() != s2.length()){  // here we check if our string length is not same return false
+           return false;
+       }
+
+       int [] count = new int[26]; // here we create an array with the size of 26
+
+       for (int i = 0; i < s1.length(); i++) { // This loop runs until s1 length
+           count[s1.charAt(i) - 'a']++; // here count[s1.charAt(0) - 97]++, exp :- s1 = abc; count[a - a]++ = count[0]++
+           count[s2.charAt(i) - 'a']--; // here count[s1.charAt(0) - 97]--, exp :- s1 = abc; count[a - a]-- = count[0]--
+       }
+
+       for (int i = 0; i < 26; i++) { // This loop runs 26  times
+           if (count[i] != 0){ // here if (count[0] != 0) it return false
+               return false;
+           }
+       }
+
+       return true;  // either return true if two string is same quantity and letter.
+   }
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);  // here we create a scanner class object
-
-        System.out.print("Enter first string: "); // here we want user input
-        String str1 = sc.nextLine().replaceAll("\\s", "").toLowerCase(); // here we got the modified user value
-
-        System.out.print("Enter second string: ");  // here we want user input
-        String str2 = sc.nextLine().replaceAll("\\s", "").toLowerCase(); // here we got the modified user value
-
-        if (str1.length() != str2.length()) {  // here we check if length is not same of both string, this will be run
-            System.out.println("Not anagrams");
-            return;  // here we return because we don't want to perform any other task
+        String s1 = "listen"; // here we create first string
+        String s2 = "silent"; // here we create second string
+        if (isAnagram(s1,s2)){ // here we check if two string isAnagram or not
+            System.out.println("Anagram");
         }
-
-        char[] a1 = str1.toCharArray(); // here we convert our String to character array ("care", ['c','a','r','e'] ) like this
-        char[] a2 = str2.toCharArray(); // here we convert our String to character array ("race", ['r','a','c','e'] ) like this
-
-        Arrays.sort(a1);  // here we sort our array like ( ['c','a','r','e'] => ['a','c','e','r'] )
-        Arrays.sort(a2);  // here also we sort our array like ( ['r','a','c','e'] => ['a','c','e','r'] )
-
-        if (Arrays.equals(a1, a2)) {  // here if two array is same it runs
-            System.out.println("Anagrams");
-        } else {   // if not it runs
-            System.out.println("Not anagrams");
+        else{
+            System.out.println("Not anagram");
         }
     }
 }
+
 
